@@ -7,8 +7,9 @@ var travis = new Travis({
     version: '2.0.0'
 });
 
-travis.authenticate({
+console.log(process.env);
 
+travis.authenticate({
     // available through Travis CI
     // see: http://kamranicus.com/blog/2015/02/26/continuous-deployment-with-travis-ci/
     github_token: process.env.GH_TOKEN
